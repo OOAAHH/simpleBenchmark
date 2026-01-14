@@ -13,8 +13,8 @@
     "references_dirname": "references",
     "models_dirname": "models",
     "processed_dirname": "processed",
-    "residues_list": "config/residues.list",
-    "atoms_list": "config/atoms.list",
+    "residues_list": "puzzlesBatchEval/config/residues.list",
+    "atoms_list": "puzzlesBatchEval/config/atoms.list",
     "chain_mapping_dirname": "chain_mappings",
     "chain_mapping_filename": "chain_mapping.json"
   },
