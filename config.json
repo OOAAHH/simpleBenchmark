@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "docker": {
+    "platform": "linux/amd64",
+    "images": {
+      "tools": "ooaahhdocker/rpz-tools:1.5",
+      "gdt": "ooaahhdocker/rpz-tools-gdt:18.04-1.0",
+      "ost": "openstructure:2.11.1-amd64"
+    }
+  },
+  "inputs": {
+    "prefer_processed": true,
+    "references_dirname": "references",
+    "models_dirname": "models",
+    "processed_dirname": "processed",
+    "residues_list": "puzzlesBenchmark_after/config/residues.list",
+    "atoms_list": "puzzlesBenchmark_after/config/atoms.list",
+    "chain_mapping_dirname": "chain_mappings",
+    "chain_mapping_filename": "chain_mapping.json"
+  },
+  "atoms_whitelist": {
+    "backbone": ["C1'", "C2'", "C3'", "C4'", "C5'", "O2'", "O3'", "O4'", "O5'", "OP1", "OP2", "P"],
+    "heavy": ["C2", "C4", "C5", "C6", "C8", "N1", "N2", "N3", "N4", "N6", "N7", "N9", "O2", "O4", "O6"]
+  },
+  "parallelism": {
+    "max_workers": 8
+  },
+  "outputs": {
+    "results_root": "results"
+  }
+}
+
